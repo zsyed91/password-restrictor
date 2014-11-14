@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Password Restrictor Example</title>
+
+<style type="text/css">
+
+	body {
+		background: #eaeaea;
+		font-family: Verdana, Helvetica, sans-serif;
+	}
+
+	#content-wrapper {
+		width: 75%;
+		margin: 10px auto;
+		background: #fff;
+		padding: 15px;
+		border: 1px solid #ccc;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	form p {
+		display: inline-block;
+		width: 100px;
+	}
+
+	input {
+		width: 200px;
+		height: 20px;
+		border: 2px solid #eee;
+	}
+
+	#password-strength-wrapper {
+		margin-left: 105px;
+	}
+
+</style>
+</head>
+<body>
+
+
+<div id="content-wrapper">
+	<h2>Password Restrictor Example</h2>	
+
+	<form>
+		
+		<p>Username</p>
+		<input type='text'><br>
+
+		<p>Password</p>
+		<input type='password' id="password">
+
+	</form>
+
+</div>
+
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="password-restrictor.js"></script>
+<script type="text/javascript">
+	$("#password").passwordRestrictor();
+
+</script>
+
+</body>
+</html>
